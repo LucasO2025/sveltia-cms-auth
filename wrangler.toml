@@ -1,3 +1,14 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2023-03-24"
+
+# Configuração que não é segredo, declarada aqui de propósito.
+#
+# O client ID aparece na URL de login de qualquer jeito e o domínio permitido é
+# o endereço público do site: nenhum dos dois precisa de sigilo. Guardá-los no
+# repositório é o que faz eles sobreviverem a qualquer publicação — o Wrangler
+# trata este arquivo como a verdade e apaga variável de texto que só existe no
+# painel. Só o GITHUB_CLIENT_SECRET continua fora daqui, como segredo.
+[vars]
+GITHUB_CLIENT_ID = "Ov23liQz20plMZfTH6us"
+ALLOWED_DOMAINS = "my-galaxy.pages.dev"
